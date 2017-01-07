@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A New Website.">
+<meta name="author" content="Ravi Saxena">
+<link rel="icon" href="icon.png" type="image/png" sizes="32x32">
+<title>Music & Videos</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="jquery.buttons.js"></script>
+<script src="jquery.archive_buttons.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style3.css">
+
+<style> 
+body,html
+	{
+		text-align: center;
+		width: device-width;
+	}
+body
+{
+    background-image: url("http://i.imgur.com/05snjDK.gif");
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size:100%;
+}
+input[type=text] {
+    width: 95%;;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('http://graphiccave.com/wp-content/uploads/2015/03/Search-Icon-PNG-Graphic-Cave.png');
+	background-size:30%;
+	text-indent:10px;
+    background-position: 0px center fixed; 
+    background-repeat: no-repeat;
+    padding-left: 20px 20px 40px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]>background-image
+	{
+    opacity: 0.7;
+	}
+input[type=text]:focus {
+    width: 100%;
+	border-color: red;
+}
+input[type=submit] {
+	background-color: grey;
+	color:white;
+	width:90%;
+	border:10px;
+	padding:1%;
+	opacity:0.8;
+	border-radius:40%;
+}
+z
+{
+	color: red;
+}
+.square
+	{
+		height:12em;
+		width: 12em;
+		border-radius:20%;
+		z-index:-1;
+		-ms-transform: rotate(45deg); /* IE 9 */
+		-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+		transform: rotate(45deg);
+		vertical-align:center;
+	}
+div>#t
+	{
+		text-align:center;
+		horizontal-align:center;
+		vertical-align:center;
+		padding:2%;
+		padding-top:10%;
+		padding-right:20%;
+		transform:rotate(-45deg);
+		position: relative;
+	}
+	.container-fluid
+	{
+		width: 100%;
+		text-align: center;
+		> li {
+				float: none;
+				display: inline-block;
+			}
+	}
+.navbar-header
+	{
+		width: 100%;
+		text-align: center;
+		> li {
+				float: none;
+				display: inline-block;
+			}
+	}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.btn.btn-danger.navbar-btn{border:2px;position:relative;border-radius:25%;align:center;width:device-width;}
+.btn.btn-danger.navbar-btn:hover{background:skyblue;border:0px;position:relative;}
+@media only screen and (min-width:720px) and (max-width:850px){.push{height:160px;}}
+@media only screen and (min-width:851px) and (max-width:1025px){.push{height:485px;}}
+</style>
+
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script tpye="text/javascript">
+$(document).ready(function()
+{
+    var url = window.location.href;
+    var search_val_raw = url.split("?q=")[1];
+    var search_val_count = search_val_raw.split("+");
+    var search_val;
+
+    for(var i = 0; i < search_val_count.length; i++)
+    {
+        search_val = search_val_count[i];
+
+        $("#search-results p:contains(" + search_val + ")").show();
+    }
+});
+</script>
+
+<style type="text/css">
+#search-results p{display: none;}
+</style>-->
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse" style="background-color: violet;opacity:0.9;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:white;"><h5>Search The Content</h5></a>
+    </div><br/><br/>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="home">HOME</button>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id1">MENU</button>
+    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id2">ARCHIVE</button>
+    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id3">My Artworks</button>
+  </div>
+</nav>
+
+<div class="container" id="content" style="margin-top:-5em;margin-bottom:-50px;">
+
+<hr width="50%" height="2%" color="red"/>
+<hr width="60%" height="2%" color="green"/>
+<hr width="50%" height="2%" color="blue"/>
+<div>		<!--<div id="search-results">-->
+<H1 style="color:purple;top:1px;position:relative;font-size:4vw;">Search Songs, Music & Videos</H1>
+</div>
+<hr width="50%" height="2%" color="red"/>
+<hr width="60%" height="2%" color="green"/>
+<hr width="50%" height="2%" color="blue"/>
+<br/>
+<br/>
+<center>
+<z>
+<div class="square text-center" style="background-color:yellow;">
+<div id="t">
+<H5>1.Youtube Videos</H5>
+<form action="https://www.youtube.com/results?search_query=" method="GET">
+<input type="text" name="q" placeholder="Search.." style="text-align:center;"/><br/><br/>
+<input type="submit" value="Search Youtube"/>
+</form>
+</div>
+</div>
+</z>
+<br/>
+<z>
+<div class="square" style="background-color:palegreen;">
+<div id="t">
+<br/>
+<H5>2.Database Songs &nbsp</H5>
+<br/>
+<form action="database_music.php" method="POST">
+<input type="submit" value="Search Songs"/>
+</form>
+</div>
+</div>
+</z>
+<br/>
+<br/>
+<z style="color:orange;">[Click on the Search Songs or Search Youtube Buttons]</z>
+</center>
+</div>
+<br/>
+<div class="push"></div>
+
+<footer class="container-fluid text-center" style="background-color: #BB1B9D;opacity:0.9;color:white;padding:1%;bottom:0px;position:relative;width:100%;">
+  <center>
+  <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id4">Contact</button>
+  <h6>Dated 9/12/16.</h6>
+  </center>
+</footer>
+
+
+
+</body>
+</html>
