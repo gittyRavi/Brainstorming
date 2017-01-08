@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jquery.buttons.js"></script>
+  <style>
+.container-fluid
+	{
+		width: 100%;
+		text-align: center;
+		> li {
+				float: none;
+				display: inline-block;
+			}
+	}
+.navbar-header
+	{
+		width: 100%;
+		text-align: center;
+		> li {
+				float: none;
+				display: inline-block;
+			}
+	}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.btn.btn-danger.navbar-btn{background:green;border:2px;position:relative;border-radius:25%;align:center;width:device-width;}
+.btn.btn-danger.navbar-btn:hover{background:skyblue;border:0px;position:relative;}
+@media only screen and (min-width:720px) and (max-width:850px){.push{height:300px;}}
+@media only screen and (min-width:851px) and (max-width:1025px){.push{height:640px;}}
+
+</style>
+</head>
+  <body style="background-color:orange;" onload="startTime()">
+  <nav class="navbar navbar-inverse" style="background-color: blue;opacity:0.7;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:white;"><h5>YT-Javascript-Player</h5></a>
+    </div><br/><br/>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="home">HOME</button>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id1">MENU</button>
+    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id2">ARCHIVE</button>
+    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id3">My Artworks</button>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id4">Contact</button>
+  </div>
+  </nav>
+
+<br/>
+<div class="container" id="content" style="margin-top:-2em;margin-bottom:0px;">
+  <h1 style="text-align:center; background-color:red;color:blue;border-radius:100px;">..Redirected to Youtube Video Page.<div id="txt" style="text-align:right;display:inline-block;padding-left:6%;color:yellow;"></div></h1>
+</div>
+<br/>
+	<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <center>
+	<div id="player"></div>
+	</center>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'X14IQLk1xIk',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 100000000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+	<script>
+	  function startTime() {
+      var today = new Date();
+	  var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      // add a zero in front of numbers<10
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+      var t = setTimeout(function(){ startTime() }, 500);
+	  }
+
+	  function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+	}
+	</script>
+</body>
+</html>
