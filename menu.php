@@ -15,15 +15,11 @@
 		sup{}
 	}
 
-  @media screen and (min-device-width: 321px) and (max-device-width: 430px)
+  @media screen and (max-device-width: 430px)
 	{ 
 		sup{display:none;}
 	}
 
-  @media only screen and (max-device-width: 320px) 
-	{
-		sup{}
-	}
   .circle
 	{
 		height:2em;
@@ -60,6 +56,10 @@
 	{
 		background-color:rgba(255, 255, 255,0.5);
 	}
+	@media only screen and (max-width:320px){.push{height:0px;}}
+	@media only screen and (min-width:321px) and (max-width:450px){.push{height:10px;}}
+	@media only screen and (min-width:720px) and (max-width:850px){.push{height:270px;}}
+	@media only screen and (min-width:851px) and (max-width:1025px){.push{height:640px;}}
 	</style>
 </head>
 
@@ -130,8 +130,8 @@
 </div>
 
 <br/>
-
-<footer class="container-fluid text-center" style="background-color: green;color:white;padding:2%;bottom:-70px;position:absolute;width:100%;"">
+<div class="push"></div>
+<footer class="container-fluid text-center" style="background-color: green;color:white;padding:2%;bottom:-70px;position:absolute;width:100%;">
   <p style="opacity:0.8;">Visit Archive</p>
 </footer>
 
