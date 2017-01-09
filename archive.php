@@ -1,9 +1,11 @@
 <HTML>
 <HEAD>			<!--header & Footer 2-->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A New Website.">
-<meta name="author" content="Ravi Saxena">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A New Website.">
+  <meta name="author" content="Ravi Saxena">
 <TITLE>
 Archive
 </TITLE>
@@ -109,10 +111,10 @@ H1{background-color:pink;}
     <div class="navbar-header">
       <a class="navbar-brand" href="#" style="color:white;"><h5>Search The Content</h5></a>
     </div><br/><br/>
-	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="home">HOME</button>
-	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id1">MENU</button>
-    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id2">ARCHIVE</button>
-    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id3">My Artworks</button>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="home"><span class="glyphicon glyphicon-home"></span> HOME</button>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id1"><span class="glyphicon glyphicon-text-background"></span> MENU</button>
+    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id2"><span class="glyphicon glyphicon-tags"></span> ARCHIVE</button>
+    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id3"><span class="glyphicon glyphicon-user"></span> My Artworks</button>
   </div>
 </nav>
 
@@ -165,13 +167,13 @@ MUSIC
 <br/>
 <br/>
 <H1 style="border-radius:100px; background-color:orange;"> &nbsp </H1>
-<H1 style="border-radius:100px; background-color:yellowgreen;"><center><a href="yt-js-player.html"><button class="btn btn-danger navbar-btn" style="height:25px;border-radius:20px;background-color:blue;opacity:0.5;" id="yt-js-player">YT-JS-Player</button></a></center></H1>
+<H1 style="border-radius:100px; background-color:yellowgreen;"><center><a href="yt-js-player.html"><button class="btn btn-danger navbar-btn" style="height:25px;border-radius:20px;background-color:blue;opacity:0.5;" id="yt-js-player"><span class="glyphicon glyphicon-film"></span> YT-JS-Player</button></a></center></H1>
 <H1 style="border-radius:100px; background-color:orange;"> &nbsp </H1>
 <br/>
 </div>
 <footer class="container-fluid text-center" style="background-color: #004d40;color:white;padding:0%;bottom:-250px;position:absolute;width:100%;">
   <center>
-  <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id4">Contact</button>
+  <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id4"><span class="glyphicon glyphicon-envelope"></span> Contact</button>
   <h6>Dated 9/12/16.</h6>
   </center>
 </footer>
