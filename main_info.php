@@ -3,7 +3,11 @@
 <head>
   <title>About & Artworks</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A New Website.">
+  <meta name="author" content="Ravi Saxena">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="icon" href="icon.png" type="image/png" sizes="32x32">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -87,23 +91,31 @@
 <span class="icon-bar"></span>
 </button>
 
-<a class="navbar-brand" href="" style="color:red;font-family:jokerman;">Artworks</a>
+<a class="navbar-brand" href="" style="color:red;font-family:jokerman;"><span class="glyphicon glyphicon-tree-conifer"></span> Artworks <span class="glyphicon glyphicon-tree-conifer"></span></a>
 
 <div class="collapse navbar-collapse">
 <ul class="nav navbar-nav navbar-right">
 
+<li>
+<a href="yt-js-player.html"><span class="glyphicon glyphicon-film"></span> YT-JS-Player</a>
+</li>
+
+<li>
+<a href="database_music.php"><span class="glyphicon glyphicon-music"></span> Database-Songs</a>
+</li>
+
 <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> ~About My Works</a></li>
 
 <li>
-<a href="index.html">Home</a>
+<a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
 </li>
 
 <li>
-<a href="menu.php">Menu</a>
+<a href="menu.php"><span class="glyphicon glyphicon-text-background"></span> Menu</a>
 </li>
 
 <li class="dropdown">
-<a href="archive.php" class="dropdown-toggle" data-toggle="dropdown">Archive<b class="caret"></b></a>
+<a href="archive.php" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-tags"></span> Archive<b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li class="dropdown-header"><u style="color: #26a69a;">Main Content Page</u></li>
 <li><a href="archive.php">Archive:Main</a></li>
@@ -119,7 +131,7 @@
 </li>
 
 <li>
-<a href="contacts.php">Contact</a>
+<a href="contacts.php"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
 </li>
 
 </ul>
