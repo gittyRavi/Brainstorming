@@ -4,7 +4,11 @@
 <head>
   <title>Menu</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A New Website.">
+  <meta name="author" content="Ravi Saxena">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="icon" href="icon.png" type="image/png" sizes="32x32">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -19,7 +23,6 @@
 	{ 
 		sup{display:none;}
 	}
-
   .circle
 	{
 		height:2em;
@@ -56,7 +59,7 @@
 	{
 		background-color:rgba(255, 255, 255,0.5);
 	}
-	@media only screen and (max-width:320px){.push{height:0px;}}
+        @media only screen and (max-width:320px){.push{height:0px;}}
 	@media only screen and (min-width:321px) and (max-width:450px){.push{height:10px;}}
 	@media only screen and (min-width:720px) and (max-width:850px){.push{height:270px;}}
 	@media only screen and (min-width:851px) and (max-width:1025px){.push{height:640px;}}
@@ -74,23 +77,31 @@
 <span class="icon-bar"></span>
 </button>
 
-<a class="navbar-brand" href="" style="color:white;opacity:0.8;">Search The Menu <sup style="color:orange;">css-bootstrap page</sup></a>
+<a class="navbar-brand" href="" style="color:white;opacity:0.8;font-size:16px;">Search The Menu <sup style="color:orange;">css-bootstrap page</sup></a>
 
 <div class="collapse navbar-collapse">
 <ul class="nav navbar-nav navbar-right">
 
+<li>
+<a href="yt-js-player.html"><span class="glyphicon glyphicon-film"></span> YT-JS-Player</a>
+</li>
+
+<li>
+<a href="database_music.php"><span class="glyphicon glyphicon-music"></span> Database-Songs</a>
+</li>
+
 <li><a href="main_info.php"><span class="glyphicon glyphicon-user"></span> ~About My Works</a></li>
 
 <li>
-<a href="index.html">Home</a>
+<a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
 </li>
 
 <li class="active">
-<a href="menu.php">Menu</a>
+<a href="menu.php"><span class="glyphicon glyphicon-text-background"></span> Menu</a>
 </li>
 
 <li class="dropdown">
-<a href="archive.php" class="dropdown-toggle" data-toggle="dropdown">Archive<b class="caret"></b></a>
+<a href="archive.php" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-tags"></span> Archive<b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li class="dropdown-header"><u style="color: #26a69a;">Main Content Page</u></li>
 <li><a href="archive.php">Archive:Main</a></li>
@@ -106,7 +117,7 @@
 </li>
 
 <li>
-<a href="contacts.php">Contact</a>
+<a href="contacts.php"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
 </li>
 
 </ul>
@@ -131,7 +142,7 @@
 
 <br/>
 <div class="push"></div>
-<footer class="container-fluid text-center" style="background-color: green;color:white;padding:2%;bottom:-70px;position:absolute;width:100%;">
+<footer class="container-fluid text-center" style="background-color: green;color:white;padding:2%;bottom:-70px;position:relative;width:100%;">
   <p style="opacity:0.8;">Visit Archive</p>
 </footer>
 
