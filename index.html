@@ -45,33 +45,40 @@ Home
 .btn.btn-danger.navbar-btn{background:green;border:2px;position:relative;border-radius:25%;align:center;width:device-width;}
 .btn.btn-danger.navbar-btn:hover{background:skyblue;border:0px;position:relative;}
 .y{background-color:palegreen;}
+@media only screen and (max-width:1025px){body{background-size:100%;}}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.4);margin-right:80px;margin-left:80px;}
 </style>
 </HEAD>
-<BODY class="y">
-<nav class="navbar navbar-inverse" style="background-color: #26a69a;">
+<BODY class="y" style="background-image:url(http://68.media.tumblr.com/4a9b689ed0b75a7c801897f5f2e15c0f/tumblr_mxbplguLnF1s6lvnuo1_500.jpg);    
+    background-position: center center;
+    background-attachment: scroll;">
+<nav class="navbar navbar-inverse" style="background-color: rgba(38,166,154,0.7);">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#" style="color:white;"><h5>Search The Content</h5></a>
     </div><br/><br/>
-	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="home"><span class="glyphicon glyphicon-home"></span> HOME</button>
-	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id1"><span class="glyphicon glyphicon-text-background"></span> MENU</button>
-    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id2"><span class="glyphicon glyphicon-tags"></span> ARCHIVE</button>
-    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id3"><span class="glyphicon glyphicon-user"></span> My Artworks</button>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="home">HOME</button>
+	<button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id1">MENU</button>
+    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id2">ARCHIVE</button>
+    <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id3">My Artworks</button>
   </div>
 </nav>
 
 <div class="container">
 <center>
   <br/>
+  <div class="transbox">
   <h2><u>Main Content.</u></h2><br/>
-  <p><u><h5 style="color:green;">Learn about C++, Java, Web-development, Environment. <u style="color:purple;">[visit Archive or Menu]</u></h5></u></p>
-  <p><u><h5 style="color:grey;">[This page can browse through pages based on html/css/javascript/php/mysql collaborative frameworks].</h5></u></p>
-<a href="https://github.com/gittyRavi/Brainstorming"><p><img src="GitHub-Mark.png" style="width:50px;height:relative;"></img>Github Link</p></a>
+  <p><u><h5 style="color:darkgreen;" class="grow"><b>Learn about C++, Java, Web-development, Environment.</b></h5></u></p>
+  <p><u><h5 style="color:blackgrey;"><b>[This page can browse through pages based on html/css/javascript/php/mysql collaborative frameworks].</b></h5></u></p>
+  <a href="https://github.com/gittyRavi/Brainstorming"><p class="grow"><img src="GitHub-Mark.png" style="width:50px;height:relative;"><b style="color:purple;">Github Link</b></p></a>
+  </div>
 </center>
 </div>
-<footer class="container-fluid text-center" style="background-color: #004d40;color:white;padding:1%;bottom:0px;position:absolute;width:100%;">
+<footer class="container-fluid text-center" style="background-color:rgba(0,77,64,0.7);color:white;padding:1%;bottom:0px;position:absolute;width:100%;">
   <center>
-  <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id4"><span class="glyphicon glyphicon-envelope"></span> Contact</button>
+  <button class="btn btn-danger navbar-btn" style="border-radius:20%;" id="id4">Contact</button>
   <h6>Dated 9/12/16.</h6>
   </center>
 </footer>
