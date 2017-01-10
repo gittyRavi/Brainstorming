@@ -13,6 +13,8 @@
   <link rel="icon" href="icon.png" type="image/png" sizes="32x32">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"type='text/css'>
+  <link rel="stylesheet" href="sidebar.css">
   <style>
   @media screen and (min-width: 431px) 
 	{
@@ -124,6 +126,28 @@
 </div>
 
 </nav>
+	
+<!--Sidebar start-->
+
+<nav class="social" style="position:fixed;margin-top:120px;;z-index:1;">
+    <ul>
+        <li><a href="https://twitter.com/RaviSaxena21">Twitter <i class="fa fa-twitter" style="background-color:skyblue;color:white;"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100004184418770">Facebook <i class="fa fa-facebook" style="background-color:#3b5998;color:white;"></i></a></li>
+        <li><a href="https://in.pinterest.com">Pinterest <i class="fa fa-pinterest" style="background-color:red;color:white;"></i></a></li>
+        <li><a href="https://github.com/gittyRavi">Github <i class="fa fa-github" style="background-color:white;color:black;"></i></a></li>
+    </ul>
+</nav>
+
+<!--Sidebar end-->
+<!--search box start--
+    <div class="search-wrapper" style="margin-left:52px;">
+                    <form action="D:/HD Songs" method="get" id="search">
+                        <label class="search-field-label">
+                            <input type="text" class="search-field" name="q" id="q" placeholder="Search menu" value="" autocomplete="on">
+                        </label>
+                    </form>
+    </div>
+--search box end-->
   
 <div class="container y">
 
