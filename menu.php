@@ -159,7 +159,8 @@
   <pre style="text-indent:2.5em;position: center center"><div class="circle" style="vertical-align:center;margin-top:-0.3em"></div><b>You can also learn about your Environment and send me your ideas for conservations.</b></pre>
   <pre style="text-indent:2.5em;position: center center"><div class="circle" style="vertical-align:center;margin-top:-0.3em"></div><b>You can also view the source codes of the pages to learn and understand web-development basics.</b></pre>
   <h3><u>Hi friends, this is a new website created by me { रवि सक्सेना :) }</u></h3>
-  <p>I am eagerly waiting for your reviews as you can send me your messages through the <br/>contact tab link.</p>
+  <p>1-> I have created these pages using <span style="color:#3b5998;">html,css,javascript,jquery & php</span>.</p>
+  <p>2-> I am eagerly waiting for your reviews as you can send me your messages through the <br/>&nbsp &nbsp &nbsp contact tab link.</p>
   <br/>
   <br/>  
 </div>
