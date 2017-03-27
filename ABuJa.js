@@ -6,7 +6,6 @@ $(document).ready(function() {
     }, 1500);
  
 });
-  
- /* Thanks to:
+/* Thanks to:
   http://www.cantinanegrar.it/
 */
